@@ -5,7 +5,7 @@ var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 
 module.exports = React.createClass({
-    displayName: 'commentView',
+    displayName: 'quoteView',
     init: true,
     page: 1,
     stopLoading: false,
@@ -69,8 +69,6 @@ module.exports = React.createClass({
       }
     },
     render: function(){
-
-
         var createEntry = function(entry) {
             if (entry != null) {
             return (

@@ -2,7 +2,7 @@ var path = require('path');
 var node_modules_dir = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'index.jsx'),
+    entry: path.resolve(__dirname, '/scripts/index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'sr-quote-widget.js', //this is the default name, so you can skip it
