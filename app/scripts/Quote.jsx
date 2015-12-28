@@ -6,11 +6,13 @@ module.exports = React.createClass({
   displayName: "srentry",
   render: function() {
               return (
-                <div className='entry'>
+                <div className='sr-quote'>
+                    <div className="quoteText">
                       {this.props.desc}
-                      <div className='authorName'>
-                        {this.props.author}
-                      </div>
+                    </div>
+                    <div className='authorName'>
+                      - {this.props.author}
+                    </div>
                   </div>
                 )
             }

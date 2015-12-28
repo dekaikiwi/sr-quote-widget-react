@@ -3,9 +3,11 @@
 var React = require('react')
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
+var Quote = require('./Quote')
+
 
 module.exports = React.createClass({
-    displayName: 'quoteView',
+    displayName: 'QuoteView',
     init: true,
     page: 1,
     stopLoading: false,
@@ -72,19 +74,7 @@ module.exports = React.createClass({
         var createEntry = function(entry) {
             if (entry != null) {
             return (
-                    <div className='entry'>
-                      <div className='entryDesc'>
-                        {entry.details.description}
-                      </div>
-                      <div className='author'>
-                        <div className='authorName'>
-                          - {entry.author.name}
-                        </div>
-                        <div className='authorImage'>
-                        </div>
-                      </div>
-                    </div>
-
+                    <Quote desc={entry.details.description} author={entry.author.name}/>
                     )
           }
         }
