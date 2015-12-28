@@ -1,14 +1,18 @@
 /** @jsx React.DOM */
 'use strict'
+
+
 var React = require('react')
 var ReactDOM = require('react-dom')
 var Hello = require('./commentview')
 var fonts = require('google-fonts')
-//var srentry = require('./srentry');
+
+require('./stylesheets/main.scss');
+
 var content = document.getElementsByClassName('commentWidget')
 
 fonts.add({
-  'Raleway' : 400
+  'Raleway' : [400, 700]
 })
 
 

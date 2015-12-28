@@ -13,13 +13,17 @@
   "license": "ISC",
   "dependencies": {
     "google-fonts": "0.0.0",
+    "node-sass": "^3.4.2",
     "react": "^0.14.3",
     "react-addons-css-transition-group": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "sass-loader": "^3.1.2"
   },
   "devDependencies": {
+    "css-loader": "^0.23.1",
     "http-server": "^0.8.5",
     "jsx-loader": "^0.13.2",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   }
