@@ -75,9 +75,15 @@ module.exports = React.createClass({
             if (entry != null) {
             return (
                     <div className='entry'>
-                      {entry.details.description}
-                      <div className='authorName'>
-                        {entry.author.name}
+                      <div className='entryDesc'>
+                        {entry.details.description}
+                      </div>
+                      <div className='author'>
+                        <div className='authorName'>
+                          - {entry.author.name}
+                        </div>
+                        <div className='authorImage'>
+                        </div>
                       </div>
                     </div>
 

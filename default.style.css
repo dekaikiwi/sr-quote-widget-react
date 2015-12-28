@@ -1,0 +1,38 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #545454;
+}
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.entryDesc {
+  font-size: 36px;
+  line-height: 1.3em;
+}
+
+.commentWidget {
+  width: 33%;
+}
+
+.authorName {
+  text-transform: uppercase;
+  margin-top: 20px;
+  float: right;
+  font-size: 26px;
+}

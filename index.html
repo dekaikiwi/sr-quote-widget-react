@@ -5,33 +5,16 @@
     <!-- include react -->
     <script src="./node_modules/react/dist/react-with-addons.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="default.style.css">
 
     <style>
-        .example-enter {
-          opacity: 0.01;
-        }
 
-        .example-enter.example-enter-active {
-          opacity: 1;
-          transition: opacity 500ms ease-in;
-        }
-
-        .example-leave {
-          opacity: 1;
-        }
-
-        .example-leave.example-leave-active {
-          opacity: 0.01;
-          transition: opacity 300ms ease-in;
-        }
     </style>
 
 </head>
 <body>
     <h1>Widget 1</h1>
-    <div class="commentWidget" customer="jono" board="adventures-test" interval="5000"></div>
-    <h1>Widget 2</h1>
-    <div class="commentWidget" customer="jono" board="video-test-board" interval="1000">
+    <div class="commentWidget" customer="jono" board="star-wars-text" interval="5000"></div>
         <!-- this is where the root react component will get rendered -->
     </div>
     <!-- include the webpack-dev-server script so our scripts get reloaded when we make a change -->
