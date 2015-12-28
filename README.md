@@ -10,6 +10,6 @@ npm start
 
 | Atrribute | Required? | Description |
 | --------- | --------- | ----------- |
-| customer  | Yes |The Shuttelrock account you want to display content from (eg <customer>.shuttlerock.com) |
+| customer  | Yes |The Shuttlerock account you want to display content from (eg <customer>.shuttlerock.com) |
 | board     | Yes |The Shuttlerock board you want to display content from |
 | interval  | Yes |The time in ms between tranisitions |
