@@ -13,6 +13,8 @@ npm start
 <commentWidget customer="jono" board="adventures-test" interval="5000"> 
 ```
 
+## Attributes
+
 | Atrribute | Required? | Description |
 | --------- | --------- | ----------- |
 | customer  | Yes |The Shuttlerock account you want to display content from (eg <customer>.shuttlerock.com) |
