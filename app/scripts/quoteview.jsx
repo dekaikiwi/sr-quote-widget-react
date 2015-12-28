@@ -74,7 +74,7 @@ module.exports = React.createClass({
         var createEntry = function(entry) {
             if (entry != null) {
             return (
-                    <Quote desc={entry.details.description} author={entry.author.name}/>
+                    <Quote entry={entry}/>
                     )
           }
         }

@@ -10,8 +10,23 @@
     text-transform: uppercase;
     margin-top: 20px;
     float: right;
-    font-size: 26px;
+    font-size: 1.7em;
     font-weight: bold;
-    color: #16B6DF;
+    color: $defaultNameColor;
+
+    .sourceNetwork {
+      font-size: 0.4em;
+      text-align: right;
+      color: $defaultNetworkLinkColor;
+
+      a {
+        text-decoration: none;
+        color: $defaultNameColor;
+
+        &:active {
+          color: $defaultNameColor
+        }
+      }
+    }
   }
 }
