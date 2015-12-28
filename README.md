@@ -8,6 +8,11 @@ npm install
 npm start
 ```
 
+## Example
+```
+<commentWidget customer="jono" board="adventures-test" interval="5000"> 
+```
+
 | Atrribute | Required? | Description |
 | --------- | --------- | ----------- |
 | customer  | Yes |The Shuttlerock account you want to display content from (eg <customer>.shuttlerock.com) |
