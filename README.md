@@ -5,7 +5,7 @@ A simple widget to display text entries from a Shuttlerock board.
 ## Installation
 ```
 npm install
-npm start
+npm start // A web server will start at http://localhost:8090
 ```
 
 ## Example
