@@ -2,7 +2,7 @@ var path = require('path');
 var node_modules_dir = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
-    entry: path.resolve(__dirname, '/scripts/index.jsx'),
+    entry: path.resolve(__dirname, 'app/index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'sr-quote-widget.js', //this is the default name, so you can skip it
@@ -16,7 +16,7 @@ module.exports = {
                 //tell webpack to use jsx-loader for all *.jsx files
                 test: /\.jsx$/,
                 loader: 'jsx-loader?insertPragma=React.DOM&harmony',
-                exclude: [node_modules_dir]
+                //exclude: [node_modules_dir]
             },
                 // SASS
             {
@@ -26,9 +26,7 @@ module.exports = {
         ]
     },
     externals: {
-        //don't bundle the 'react' npm package with our bundle.js
-        //but get it from a global 'React' variable
-        //'react': 'React'
+
     },
     resolve: {
         extensions: ['', '.js', '.jsx']
