@@ -13,10 +13,12 @@ module.exports = React.createClass({
     stopLoading: false,
     entryCache: [],
     getInitialState: function() {
+
       return {
               data: [],
               currentEntry: null
             };
+
     },
     nextEntry: function() {
       if(this.state.data.length <= 0 && !this.stopLoading) {
@@ -26,7 +28,7 @@ module.exports = React.createClass({
         this.setState({data: this.entryCache.slice()})
       }
       this.clearEntry()
-      setTimeout(this.setEntry, 300) //Time is animation time
+      setTimeout(this.setEntry, this.props.transitionTime) //Time is animation time
     },
     clearEntry: function() {
       console.log('clearEntry')
@@ -42,13 +44,12 @@ module.exports = React.createClass({
     },
     loadEntries: function() {
        jQuery.ajax({
-          url: 'https://api.shuttlerock.com/v2/' + this.props.customer + '/boards/' + this.props.board + '/entries.json?page=' + this.page,
+          url: 'https://api.shuttlerock.com/v2/' + this.props.customer + '/boards/' + this.props.board + '/entries.json?page=' + this.page + '&sort_method=' + this.props.sort,
           dataType: 'json',
           cache: false,
           success: function(data) {
             this.entryCache = this.entryCache.concat(data)
-            console.log("== ENTRY CACHE ==")
-            console.log(this.entryCache)
+
             this.setState({data: data});
             if (data.length <= 0) {
               this.stopLoading = true;
@@ -72,10 +73,8 @@ module.exports = React.createClass({
     },
     render: function(){
         var createEntry = function(entry) {
-            if (entry != null) {
-            return (
-                    <Quote entry={entry}/>
-                    )
+          if (entry != null) {
+            return ( <Quote entry={entry}/>)
           }
         }
 
