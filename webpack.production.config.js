@@ -15,7 +15,7 @@ module.exports = {
             {
                 //tell webpack to use jsx-loader for all *.jsx files
                 test: /\.jsx$/,
-                loader: 'jsx-loader?insertPragma=React.DOM&harmony',
+                loader: 'jsx-loader?insertPragma=React.DOM&harmony'
                 //exclude: [node_modules_dir]
             },
                 // SASS
