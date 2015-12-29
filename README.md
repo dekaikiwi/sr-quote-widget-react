@@ -26,10 +26,9 @@ npm run deploy
       <h1>Widget 1</h1>
       <div class="quoteWidget" customer="news" board="out-and-about" interval="5000"></div>
       <h1>Widget 2</h1>
-      <div class="quoteWidget" customer="jono" board="star-wars-text" interval="1000">
-          <!-- this is where the root react component will get rendered -->
-      </div>
-      <!-- Quote Widget Script must be placed after point in HTML where the widget will appear -->
+      <div class="quoteWidget" customer="jono" board="star-wars-text" interval="1000"></div>
+      
+      <!-- Script must be placed after point in HTML where the widget will appear -->
       <script src="path-to-script/sr-quote-widget.js"></script>
   </body>
 </html>
