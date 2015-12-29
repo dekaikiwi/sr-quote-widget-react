@@ -3,18 +3,20 @@
 A simple widget to display text entries from a Shuttlerock board. Built in ReactJS
 
 
-## Installation
+## How to: Run Local Web Server
 ```
 npm install
 npm start // A web server will start at http://localhost:8090
 ```
 
-## Building
+## How to: Build
 
 ```
 npm install
 npm run deploy
 ```
+
+`sr-quote-widget.js` will be compiled (CSS Included) to the `/dist` directory.
 
 ## Example
 ```
