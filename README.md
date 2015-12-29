@@ -48,3 +48,5 @@ npm run deploy
 ## Compatibility
 
 This widget relies on jQuery for parts of it's functionality. It was built using jQuery 2.1.4 and has not been tested for compatibility with other versions at this stage.
+
+[![Code Climate](https://codeclimate.com/github/dekaikiwi/sr-quote-widget-react/badges/gpa.svg)](https://codeclimate.com/github/dekaikiwi/sr-quote-widget-react)
