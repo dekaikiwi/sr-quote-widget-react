@@ -23,9 +23,11 @@ module.exports = React.createClass({
 
     },
     nextEntry: function() {
-      if(this.state.data.length <= 0 && !this.stopLoading) {
+      //Two entries before the end of the array, look for more entries
+      if(this.state.data.length <= 2 && !this.stopLoading) {
         this.loadEntries()
       } else if (this.state.data.length <= 0 && this.stopLoading){
+        //Once we have no more new content, load from the cache array
         console.log('Load from entryCache');
         this.setState({data: this.entryCache.slice()})
       }
@@ -51,8 +53,12 @@ module.exports = React.createClass({
           cache: false,
           success: function(data) {
             this.entryCache = this.entryCache.concat(data)
+            var stateData = this.state.data
 
-            this.setState({data: data});
+            console.log(stateData)
+
+            stateData = stateData.concat(data)
+            this.setState({data: stateData});
             if (data.length <= 0) {
               this.stopLoading = true;
             }
@@ -69,7 +75,7 @@ module.exports = React.createClass({
         });
       },
     componentDidMount: function() {
-      if(this.state.data.length <= 0 && !this.stopLoading) {
+      if(this.state.data.length <= 2 && !this.stopLoading) {
         this.loadEntries()
       }
     },
