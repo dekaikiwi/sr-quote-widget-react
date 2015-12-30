@@ -5,6 +5,7 @@ var React = require('react')
 var ReactDOM = require('react-dom')
 var fonts = require('google-fonts')
 
+require("font-awesome-webpack")
 require('./stylesheets/main.scss')
 
 var QuoteView = require('./scripts/QuoteView')
