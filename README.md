@@ -6,7 +6,7 @@ A simple widget to display text entries from a Shuttlerock board. Built in React
 ## How to: Run Local Web Server
 ```
 npm install
-npm start // A web server will start at http://localhost:8090
+npm start // A web server will start at http://localhost:8080
 ```
 
 ## How to: Build
