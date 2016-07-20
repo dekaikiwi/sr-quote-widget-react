@@ -1,39 +1,13 @@
+
 .sr-quote {
-
-  .quoteText {
-    font-size: 36px;
-    line-height: 1.3em;
-  }
-
-
   .authorName {
-    text-transform: uppercase;
-    margin-top: 20px;
-    float: right;
-    font-size: 1.7em;
-    font-weight: bold;
-    color: $defaultNameColor;
-
     .sourceNetwork {
       font-size: 0.4em;
       text-align: right;
-      color: $defaultNetworkLinkColor;
 
       a {
         text-decoration: none;
-        color: $defaultNameColor;
-
-        &:active {
-          color: $defaultNameColor
         }
-      }
     }
-  }
-
-  .likes {
-    float: left;
-    font-size: 2em;
-    margin-top: 20px;
-    color: $defaultNameColor;
   }
 }

@@ -1,6 +1,7 @@
 {
   "name": "sr-quote-widget-react",
   "version": "1.0.0",
+  "repository": "https://github.com/dekaikiwi/sr-quote-widget-react",
   "description": "Simple Quote Widget for use with Shuttlerock Platform",
   "main": "index.js",
   "scripts": {
@@ -22,7 +23,6 @@
   "devDependencies": {
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
-    "http-server": "^0.8.5",
     "jsx-loader": "^0.13.2",
     "less": "^2.5.3",
     "node-sass": "^3.4.2",

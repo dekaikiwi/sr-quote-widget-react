@@ -11,7 +11,8 @@ require('./stylesheets/main.scss')
 var QuoteView = require('./scripts/QuoteView')
 
 fonts.add({
-  'Raleway' : [400, 700]
+  'Raleway' : [400, 700],
+  'Fredoka One' : [400, 700]
 })
 
 //Constants
