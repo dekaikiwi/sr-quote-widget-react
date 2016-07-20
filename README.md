@@ -27,9 +27,9 @@ npm run deploy
   </head>
   <body>
       <h1>Widget 1</h1>
-      <div class="quoteWidget" customer="news" board="out-and-about" interval="5000"></div>
+      <div class="quoteWidget default-theme" customer="news" board="out-and-about" interval="5000"></div>
       <h1>Widget 2</h1>
-      <div class="quoteWidget" customer="jono" board="star-wars-text" interval="1000"></div>
+      <div class="quoteWidget default-theme" customer="jono" board="star-wars-text" interval="1000"></div>
       
       <!-- Script must be placed after point in HTML where the widget will appear -->
       <script src="path-to-script/sr-quote-widget.js"></script>
@@ -46,6 +46,14 @@ npm run deploy
 | interval  | No | The time in ms between tranisitions |
 | transitionTime | No | The time between one quote disappearing and another appearing |
 | sort           |  No | The order quotes will appear in valid values are `created_desc`, `shares_desc`, `comments_desc`, `random` *Note: Random is currently a fixed random order* |
+
+## Themes
+These exist multiple themes that can be applied to the widget. When embedding the the widget HTML block into your page, please specify one of the following themes as a class.
+
+- `default-theme`
+- `new-theme`
+
+_TODO: Set Default as default theme even if default theme is not specified by user in HTML class_
 
 ## Compatibility
 
